@@ -1,6 +1,115 @@
-$primary: #21BC6B;
+// Cores
+$primary-color: #21BC6B;
+$h1-color: #263238;
+$label-color: #858E97; 
+$input-color: #CDD4DA;
+$p-color: #ACB5BE; 
+
+// Tamanhos 
+$width-form-container: 40%;
+$width-img-container: 60%;
 
 body {
     height: 100vh;
-    background-color: #21BC6B;
+    display: flex;
+}
+
+.img-container {
+        width: $width-img-container;
+
+        display: flex;
+        align-items: center;
+}
+
+.form-container {
+    width: $width-form-container;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+
+    h1 {
+        width: 60%;
+        text-align: center;
+
+        color: $h1-color;
+
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.95rem;
+    }
+
+    form {
+        width: 70.8%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        .label-input {
+            height: 27.45%;
+
+            display: flex;
+            flex-direction: column;
+            gap: 7.7%;
+
+            label { 
+                color: $label-color;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5rem;
+            }
+
+            label:hover {
+                cursor: text;
+            }
+
+            input {
+                height: 3rem;
+                padding: 0.75rem 1rem;
+
+                border-radius: 0.5rem;
+                border: 1px solid $input-color;
+
+                font-weight: 400;
+                line-height: 1.5rem;
+            }
+        }
+
+        button {
+            height: 3rem;
+
+            font-weight: 700;
+
+            background-color: $primary-color;
+
+            border: none;
+            border-radius: 0.5rem;
+            color: white;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        line-height: 1.3rem;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+label input {
+    width: 100%;
 }

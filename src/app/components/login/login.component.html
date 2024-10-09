@@ -1,21 +1,43 @@
-<p routerLink="./register" class="link">{{ texto }}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
 
-<body>
-    <img src="" alt="">
-    <div class="form-container">
-        <img src="" alt="">
-        <h1>Guia do Mochileiro Fatecano</h1>
-        <form action="">
-            <div class="label-input">
-                <label for="">E-mail</label>
-                <input type="text" placeholder="Digite seu e-mail">
-            </div>
-            <div class="label-input">
-                <label for="">E-mail</label>
-                <input type="text" placeholder="Digite seu e-mail">
-            </div>
-            <button>Entrar</button>
-        </form>
-        <p>Ainda não possui conta? <a href="">Cadastre-se</a></p>
-    </div>
-</body>
+        <div class="img-container">
+            <img src="../../assets/login/login_imagem.svg" alt="Garoto feliz usando seu computador.">
+        </div>
+
+        <div class="form-container">
+
+            <img src="../../assets/login/mochila_login.png" alt="Mochila verde.">
+
+            <h1>Guia do Mochileiro Fatecano</h1>
+
+            <form action="">
+
+                <div class="label-input">
+                    <label for="">E-mail</label>
+                    <input type="text" placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="label-input">
+                    <label for="">Senha</label>
+                    <input type="text" placeholder="Digite sua senha">
+                </div>
+
+                <button>Entrar</button>
+
+            </form>
+
+            <p>Ainda não possui conta? <a routerLink="/register">Cadastre-se</a></p>
+
+        </div>
+    </body>
+</html>
+
+
+
