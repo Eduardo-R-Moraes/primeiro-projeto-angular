@@ -63,6 +63,7 @@ body {
             gap: 7.7%;
 
             label { 
+                width: 100%;
                 color: $label-color;
                 font-size: 1rem;
                 font-weight: 400;
@@ -75,6 +76,8 @@ body {
 
             input {
                 height: 3rem;
+                width: 100%;
+
                 padding: 0.75rem 1rem;
 
                 border-radius: 0.5rem;
@@ -82,6 +85,39 @@ body {
 
                 font-weight: 400;
                 line-height: 1.5rem;
+            }
+
+            .input-icone {
+                height: 3rem;
+
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                img {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    position: absolute;
+                    right: 1rem;
+                }
+
+                img:hover {
+                    cursor: pointer;
+                }
+
+                input {
+                    height: 100%;
+                    width: 100%;
+                    padding: 0.75rem 1rem;
+
+                    position: absolute;
+
+                    border-radius: 0.5rem;
+                    border: 1px solid $input-color;
+
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                }
             }
         }
 
@@ -95,6 +131,8 @@ body {
             border: none;
             border-radius: 0.5rem;
             color: white;
+
+            transition: 0.1s;
         }
 
         button:hover {
@@ -115,8 +153,4 @@ body {
             text-decoration: underline;
         }
     }
-}
-
-label input {
-    width: 100%;
 }

@@ -5,39 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <body>
+<body>
 
-        <div class="img-container">
-            <img src="login_imagem.svg" alt="Garoto feliz usando seu computador.">
-        </div>
+    <div class="img-container">
+        <img src="login_imagem.svg" alt="Garoto feliz usando seu computador.">
+    </div>
 
-        <div class="form-container">
+    <div class="form-container">
 
-            <img src="mochila_login.png" alt="Mochila verde.">
+        <img src="mochila_login.png" alt="Mochila verde.">
 
-            <h1>Guia do Mochileiro Fatecano</h1>
+        <h1>Guia do Mochileiro Fatecano</h1>
 
-            <form action="">
+        <form action="">
 
-                <div class="label-input">
-                    <label for="">E-mail</label>
-                    <input type="text" placeholder="Digite seu e-mail">
+            <div class="label-input">
+                <label for="">E-mail</label>
+                <input type="text" placeholder="Digite seu e-mail">
+            </div>
+
+            <div class="label-input">
+                <label for="">Senha</label>
+
+                <div class="input-icone">
+                    <input [type]="visible ? 'text':'password' " placeholder="Digite sua senha">
+                    <img [src]="icone" alt="Cadeado fechado." (click)="mudarType()" class="cadeado">
                 </div>
 
-                <div class="label-input">
-                    <label for="">Senha</label>
-                    <input type="text" placeholder="Digite sua senha">
-                </div>
+            </div>
 
-                <button>Entrar</button>
+            <button>Entrar</button>
 
-            </form>
+        </form>
 
-            <p>Ainda não possui conta? <a routerLink="/register">Cadastre-se</a></p>
+        <p>Ainda não possui conta? <a routerLink="/register">Cadastre-se</a></p>
 
-        </div>
-    </body>
+    </div>
+</body>
 </html>
-
-
 
