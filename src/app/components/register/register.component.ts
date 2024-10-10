@@ -9,5 +9,12 @@ import { RouterModule } from '@angular/router';
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
-  texto: string = 'Clique aqui para retornar ao login'
+  icone: string[] = ["cadeado-fechado.svg", "cadeado-fechado.svg"]
+  visible: boolean[] = [false, false]
+
+  mudarType(numero: number): void {
+    this.visible[numero - 1] = !this.visible[numero - 1];
+    this.icone[numero - 1] = this.visible[numero - 1] ? "cadeado-aberto.svg":"cadeado-fechado.svg"
+    return;
+  }
 }

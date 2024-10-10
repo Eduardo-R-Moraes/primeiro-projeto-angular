@@ -1,0 +1,156 @@
+// Cores
+$primary-color: #21BC6B;
+$h1-color: #263238;
+$label-color: #858E97; 
+$input-color: #CDD4DA;
+$p-color: #ACB5BE; 
+
+// Tamanhos 
+$width-form-container: 40%;
+$width-img-container: 60%;
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.img-container {
+    width: $width-img-container;
+
+    img {
+        height: 98%;
+        margin-left: 8rem;
+    }
+}
+
+.form-container {
+    width: $width-form-container;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    img {
+        height: 10.281rem;
+        width: auto;
+    }
+
+    h1 {
+        width: 60%;
+        text-align: center;
+
+        color: $h1-color;
+
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.95rem;
+    }
+
+    form {
+        width: 70.8%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2.3rem;
+
+        .label-input {
+            height: 4.5rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: 3%;
+
+            label { 
+                width: 100%;
+                color: $label-color;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5rem;
+            }
+
+            label:hover {
+                cursor: text;
+            }
+
+            input {
+                height: 3rem;
+                width: 100%;
+
+                padding: 0.75rem 1rem;
+
+                border-radius: 0.5rem;
+                border: 1px solid $input-color;
+
+                font-weight: 400;
+                line-height: 1.5rem;
+            }
+
+            .input-icone {
+                height: 3rem;
+
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                img {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    position: absolute;
+                    right: 1rem;
+                }
+
+                img:hover {
+                    cursor: pointer;
+                }
+
+                input {
+                    height: 100%;
+                    width: 100%;
+                    padding: 0.75rem 1rem;
+
+                    position: absolute;
+
+                    border-radius: 0.5rem;
+                    border: 1px solid $input-color;
+
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+
+        button {
+            height: 3rem;
+
+            font-weight: 700;
+
+            background-color: $primary-color;
+
+            border: none;
+            border-radius: 0.5rem;
+            color: white;
+
+            transition: 0.1s;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        line-height: 1.3rem;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}

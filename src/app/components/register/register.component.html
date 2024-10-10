@@ -1,1 +1,58 @@
-<p routerLink="/" class="link">{{ texto }}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="img-container">
+        <img src="registro_imagem.svg" alt="Garoto feliz usando seu computador.">
+    </div>
+
+    <div class="form-container">
+
+        <h1>Cadastre-se</h1>
+
+        <form action="">
+
+            <div class="label-input">
+                <label for="">Nome</label>
+                <input type="text">
+            </div>
+
+            <div class="label-input">
+                <label for="">E-mail</label>
+                <input type="text">
+            </div>
+
+            <div class="label-input">
+                <label for="">Senha</label>
+
+                <div class="input-icone">
+                    <input [type]="visible[0] ? 'text':'password' ">
+                    <img [src]="icone[0]" alt="Cadeado fechado." (click)="mudarType(1)" class="cadeado">
+                </div>
+
+            </div>
+
+            <div class="label-input">
+                <label for="">Senha</label>
+
+                <div class="input-icone">
+                    <input [type]="visible[1] ? 'text':'password' ">
+                    <img [src]="icone[1]" alt="Cadeado fechado." (click)="mudarType(2)" class="cadeado">
+                </div>
+
+            </div>
+
+            <button routerLink="/home" >Cadastrar</button>
+
+        </form>
+
+        <p>Possui conta? <a routerLink="/">Entrar</a></p>
+
+    </div>
+</body>
+</html>
