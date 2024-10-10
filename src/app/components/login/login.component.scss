@@ -15,10 +15,12 @@ body {
 }
 
 .img-container {
-        width: $width-img-container;
+    width: $width-img-container;
 
-        display: flex;
-        align-items: center;
+    img {
+        height: 98%;
+        margin-left: 8rem;
+    }
 }
 
 .form-container {
@@ -29,6 +31,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3%;
+
+    img {
+        height: 10.281rem;
+        width: auto;
+    }
 
     h1 {
         width: 60%;
