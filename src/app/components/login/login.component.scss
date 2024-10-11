@@ -19,7 +19,7 @@ body {
 
     img {
         height: 98%;
-        margin-left: 8rem;
+        margin-left: 6rem;
     }
 }
 
@@ -38,7 +38,7 @@ body {
     }
 
     h1 {
-        width: 60%;
+        width: 55%;
         text-align: center;
 
         color: $h1-color;
@@ -151,6 +151,31 @@ body {
 
         a:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+// Responsividade
+// celular / tablet
+@media screen and (max-width: 900px) {
+    .img-container{ 
+        display: none;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
+
+// Formatação para dispositivos pequenos
+@media screen and (min-width: 900px) and (max-width: 1800px) {
+    .img-container{ 
+        img {
+            width: 90%;
         }
     }
 }
