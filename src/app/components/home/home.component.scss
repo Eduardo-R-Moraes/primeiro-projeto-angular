@@ -1,0 +1,107 @@
+$primary-color: #21BC6B;
+$h1-color: #3E3E3E;
+$p-color: #7A7786;
+$card-color: #3E3E3E;
+
+body {
+    height: 100vh;
+    
+    app-navbar {
+        width: 100%;
+        position: fix;
+    }
+
+    main {
+        padding: 0 4.4rem 10rem 4.4rem;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5.4rem 0;
+
+            .texto-container {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+
+                h1 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: $h1-color;
+                    line-height: 2.2rem;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    color: $p-color;
+                    line-height: 1.7rem;
+                }
+            }
+
+            .adicionar-turma {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+
+                border-radius: 0.5rem;
+
+                background-color: $primary-color;
+                color: white;
+
+                width: 13.5rem;
+                height: 3.75rem;
+            }
+        }
+
+        .grupo {
+            display: flex;
+            flex-direction: column;
+            gap: 4.5rem;
+        }
+
+        .item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card1 {
+            background-color: #E2F4C5;
+        }
+
+        .card2 {
+            background-color: #EEE7DA;
+        }
+        .card3 {
+            background-color: #A5DD9B;
+        }
+        .card4 {
+            background-color: #C5EBAA;
+        }
+
+        .card5 {
+            background-color: #FFFFDD;
+        }
+
+        .card6 {
+            background-color: #AFC8AD;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 1.5rem;
+            color: $card-color;
+
+            border-radius: 0.5rem;
+
+            width: 19.5rem;
+            height: 13.8rem;
+        }
+    }
+}
