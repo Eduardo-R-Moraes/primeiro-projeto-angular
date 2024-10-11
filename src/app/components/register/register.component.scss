@@ -154,3 +154,28 @@ body {
         }
     }
 }
+
+// Responsividade
+// celular / tablet
+@media screen and (max-width: 900px) {
+    .img-container{ 
+        display: none;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
+
+// Formatação para dispositivos pequenos
+@media screen and (min-width: 900px) and (max-width: 2100px) {
+    .img-container{ 
+        img {
+            width: 90%;
+        }
+    }
+}
