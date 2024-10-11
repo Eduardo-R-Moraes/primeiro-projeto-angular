@@ -1,4 +1,17 @@
 $primary-color: #21BC6B;
+$font-color: #fff;
+
+* {
+    color: $font-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 body {
     height: 5.75rem;
@@ -14,11 +27,26 @@ body {
     .logo {
         display: flex;
         align-items: center;
+        gap: .75rem;
+
+        p {
+            width: 10rem;
+            font-weight: 600;
+            line-height: 1.3rem;
+        }
     }
 
     ul {
         display: flex;
         gap: 3rem;
+
+        list-style-type: none;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
     }
 }
 
