@@ -8,11 +8,12 @@ body {
     
     app-navbar {
         width: 100%;
-        position: fix;
+        position: fixed;
+        top: 0;
     }
 
     main {
-        padding: 0 4.4rem 10rem 4.4rem;
+        padding: 5.75rem 4.4rem 10rem 4.4rem;
 
         .container {
             display: flex;
@@ -96,9 +97,12 @@ body {
             align-items: center;
 
             font-size: 1.5rem;
+            font-weight: 500;
             color: $card-color;
 
             border-radius: 0.5rem;
+
+            box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.2), -.2rem 0 .2rem rgb(0, 0, 0, 0.2);
 
             width: 19.5rem;
             height: 13.8rem;
