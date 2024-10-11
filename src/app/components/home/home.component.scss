@@ -58,15 +58,10 @@ body {
         }
 
         .grupo {
-            display: flex;
-            flex-direction: column;
-            gap: 4.5rem;
-        }
-
-        .item {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 5%;
+            row-gap: 10%;
         }
 
         .card1 {
@@ -92,6 +87,9 @@ body {
         }
 
         .card {
+            width: 19.5rem;
+            height: 13.8rem;
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -103,9 +101,17 @@ body {
             border-radius: 0.5rem;
 
             box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.2), -.2rem 0 .2rem rgb(0, 0, 0, 0.2);
-
-            width: 19.5rem;
-            height: 13.8rem;
         }
+    }
+}
+
+// Responsividade
+// celular / tablet
+@media screen and (max-width: 1160px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: auto 7rem;
+        margin: auto;
     }
 }
