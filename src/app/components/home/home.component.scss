@@ -60,8 +60,27 @@ body {
         .grupo {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            column-gap: 5%;
-            row-gap: 10%;
+            align-items: center;
+            justify-items: center;
+            row-gap: 4rem;
+        }
+
+        .justify-start {
+            justify-self: start;
+        }
+        
+        .justify-center {
+            justify-self: center;
+        }
+
+        .justify-end {
+            justify-self: end;
+        }
+
+        .item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
         }
 
         .card1 {
@@ -105,13 +124,9 @@ body {
     }
 }
 
-// Responsividade
-// celular / tablet
-@media screen and (max-width: 1160px) {
-    .grid {
+@media screen and (max-width: 1170px) {
+    .grupo { 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: auto 7rem;
-        margin: auto;
+        grid-template-columns: 1fr 1fr 
     }
 }
